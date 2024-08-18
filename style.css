@@ -1,0 +1,149 @@
+/* Css de özellikler ingilizce isimlendirmeye sahiptir.Ör arka plan rengi için background-color kullanılır.Birden fazala kelimeden oluşan bir isime sahipse bu isimler arası '-'  ile ayrılır.*/
+h1 {
+  background-color: red;
+  /*  background-color ==> Arkaplan rengi */
+  color: cadetblue;
+  /*color ==> Yazı rengi */
+  font-size: 100px;
+  /*  font-size  ==> Yazı boyutu */
+  width: 45%;
+}
+h2 {
+  background-color: lawngreen;
+  color: brown;
+  font-size: 55px;
+  /* padding ==> İç Boşluk */
+  /* padding-top: 10px;
+  padding-right: 23px;
+  padding-bottom: 44px;
+  padding-left: 54px; */
+  padding: 10px 23px 44px 54px;
+}
+
+h3 {
+  background-color: crimson;
+  font-size: 44px;
+  /* margin ==> Dış Boşluk */
+  /* margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px; */
+  margin: 10px 20px 30px 40px;
+}
+
+b {
+  background-color: hotpink;
+  color: darkslateblue;
+  font-size: 66px;
+}
+
+p {
+  background-color: rgb(215, 105, 30);
+  font-size: 33px;
+  color: white;
+}
+
+/* Css de renk verirken 3 yöntem mevcuttur.
+* 1-) Renk Adı: Bu yöntemde css kendi içerisinde bulunan renk adları ile renklendirme yapılır.
+
+* 2-) Hex Kodu: Hex kodu renklere karşılık gelen kodlardır. Hex kodları 3,6 yada 8 haneli kodlardır.Bu kodların herbiri farklı renklere tekabül eder.
+
+
+* 3-) Rgb (Red Green Blue)  Kodu: Her basamak için 0 ile 256 arasında değerle alan bu yapıda renklerin farklı şekilde birleştirilmesi ile farklı renkler elde edilir.
+
+* 4-) Rgba(Red,Green,Blue,Alpha): rgb den farklı olarak sonundaki a opaklığı temsil eder.0 ile  1 arasında değerler alır.1 iken mat olur 0 a yaklaştıkça daha opak bir görünüm kazanır.
+*/
+
+i {
+  background-color: rgb(14, 98, 81);
+}
+
+/* Bu yöntemlerden hangisinin tercih edileceği tamammiyle projeden projeye değişir. */
+
+.başlık {
+  background-color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#ders-başlık {
+  background-color: thistle;
+  color: coral;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ! Class ve id arasındaki fark
+
+Class ortak yapılar oluşturmak için kullanılır.id ise daha çok benzersiz yapılar için kullanılır.(Ör: sayfadaki ortak kartlar için class kullanılırken başlık gibi logo gibi tek kısımlar için id kullanılır.
+*/
+
+.yazı {
+  background-color: rgb(19, 43, 78);
+  color: white;
+  padding: 20px;
+  text-align: end;
+  /* text-align özelliği yazıların yatay kısımda nereden başlayarak hizalanacağını belirler.
+  Bu özellik default(varsayılan) değer olarak left alır.Ve en çok kullanılan değerleri:
+
+  start ==> Sol kısıma hizalar
+  end ==> Sağ kısıma hizalar
+  center ==> Orta kısıma hizalar
+  */
+
+  font-size: 44px;
+  font-weight: 100;
+  /* font-weight ise bir yazının font kalınlığını belirler. 100 -900 arasında değerler alır. Bunun dışında bolder şeklinde bir değer alır bu değerse yaklaşık 700 e denk gelir.  */
+  text-transform: capitalize;
+  /*
+  text-transform bir yazının harflerini dönüştürmek için kullanılır.Bu özellik 3 değer alır.
+
+  lowercase ==> Kelimenin her harfini küçük olacak şekilde düzenler.
+  uppercase ==>  Kelimenin her harfini büyük olacak şekilde düzenler.
+  capitalize ==> Her kelimenin ilk harfini büyük olacak şekilde düzenler.
+  */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.resim {
+  /* width: 440px; */
+  width: 100%;
+  /* width: 100vw; */
+  /*  width ==> Bir elemanın genişliğini belirlemek için kullanılır.Gerek px gibi ölçü birimleri gerekse % lik değerler alır. */
+  /* height: 532px; */
+  height: 33.25rem;
+  /* ! Tıpkı px gibi rem de bir ölçü birimidir. 1 rem 16px dir.px to rem şeklinde dönüştürücüler ile bu iki birim arasında dönüşüm gerçekleşir. */
+  /* height ==> Bir elemanın yüksekliğini belirlemek için kullanılır.Gerek px gibi ölçü birimleri gerekse % lik değerler alır.   */
+}
+
+.block {
+  background-color: aqua;
+}
+span {
+  background-color: brown;
+}
+
+.title {
+  background-color: darkorange;
+  width: 555px;
+  text-align: center;
+  color: black;
+}
+
+.inline {
+  background-color: transparent;
+  /* ! background-color: transparent ile arka planı transparent olarak ayarlanır   */
+  color: red;
+}
+.image-container {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  background-image: url("https://fotolifeakademi.com/uploads/2020/04/manzara-fotografi-cekmek.jpg");
+  /* background-image ==> Elemanın arka planına resim vermek için kullanılır  */
+  background-repeat: no-repeat;
+  /* Eğer resim bu kapsayıcının kapladığı alana sığmazsa kendini tekrar edip bu alanı kaplamaya çalışır. background-repeat: no-repeat ==> Yukarıdaki durumda resimin tekrar etmememsi için kullanılır.   */
+  background-size: cover;
+  /*  background-size: cover ==> Arka plan boyutunu belirler */
+  background-position: center;
+  /*  background-position: center ==> Arka planın konumunu belirler. */
+}

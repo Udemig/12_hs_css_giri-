@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- todo: Css Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- ! 3-) External (Harici Sayfada) Css: Tıpkı Html kodlarını .html uzantılı dosyalarda yazdığımız gibi Css kodlarını ise .css uzantılı dosyalarda yazmaktır.Bunun için Html dosyası oluşturduğumuz kısımda Css kodlarını yazmak için .css uzantılı dosya oluşturacağız. Bu yöntemde Css dosyası ve Html dosyası arasında bağlantı kurmamız gerekir.Bu  bağlantıyı Html  head kısımındaki title altında yaparız.  -->
+
+    <!-- ! 2-) İnternal (Dosya İçi) Css: Bu yöntemde verilemek istenen stil özellikleri Html head kısımı içerisinde style tagi açılarak verilir. -->
+    <style>
+      /* h1 {
+        background-color: red;
+        color: cadetblue;
+        font-size: 100px;
+      }
+      h2 {
+        background-color: lawngreen;
+        color: brown;
+        font-size: 55px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- * Html de oluşturulan elemanların stillendirilmesi 'Css' ile yapılır.Css ile Html de oluşturulan elemanlara stil vermek için 3 yol vardır: -->
+
+    <!-- ! 1-) İnline(Satır içi) Css: Bu yöntemde stil verilmek istenen eleman açılış tagi içerisinde style='' kısımında özellik verilir. -->
+    <h1 style="background-color: red; color: green; font-size: 60px">
+      Udemig Akademi
+    </h1>
+    <h1>Udemig Akademi</h1>
+    <!-- <h2 style="background-color: lawngreen; color: brown; font-size: 55px">
+        Udemig Akademi
+      </h2> -->
+    <h2>Udemig Akademi</h2>
+    <h3>Udemig Akademi</h3>
+    <h4>Udemig Akademi</h4>
+    <h5>Udemig Akademi</h5>
+    <h6>Udemig Akademi</h6>
+    <!-- <p style="background-color: chocolate">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et,
+      accusamus dolorum nisi delectus soluta quo, velit deleniti id vitae
+      praesentium laboriosam ut reprehenderit illo, odio unde veritatis nam.
+      Cum.
+    </p> -->
+    <b>UDEMİG AKADEMİ CSS DERSİ</b>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste
+      beatae earum dolor nulla recusandae cupiditate aliquam facere veritatis
+      doloremque, inventore velit ducimus deserunt, nemo minus tempora, eos quae
+      quaerat?
+    </p>
+
+    <i>Bu yazıda hex renk kodu örneği incelenecektir.</i>
+    <i>YUSUF YAMAN</i>
+    <!-- * Css de eğer bir elemana verilen özellik tag adı üzerinden verilirse bu elemanın aynısından kaç tane oluşturulursa hepsi için bu özellikler geçerli olacaktır.Ör: h1 için arka planı kırmızı olsun dersek bundan sonra oluşturulan tüm h1 etiketleri arka planı kırmızı olarak gelecektir.Bundan dolayı bu elemanlara ayırt edici özellikler veririz. -->
+    <!-- ! Class ve Id kullanımı: Yukarıda belirtilen elamanları ayırt edici özellik ihtiyacını class ve id kullanarak gideririz. -->
+    <!-- ? Classla elemanları ayırt etme: Class ile elemanları ayırt ederken elemanın açılış etiketi içerisinde class='' yazıp '' içerisinde buna bir class adı verilir. Bu class adı içerisindeki elemanla bağıntılı olmalıdır.Sonrasında Css dosyasında . koyulup bu class adı yazılır ve class adından sonra {} içerisinde bu elamana verilecek özellikler aktarılır. -->
+    <h1 class="başlık">Css Dersi</h1>
+    <h1>Css Dersi</h1>
+    <!-- ? Id kullanımı: Class kullanımı gibi id kullanımıda elemanlara spesipik özellikler aktarmak için kullanılır.Id kullanırken istenilen elemanın açılış tagi içerisinde id='' yazılır '' içerisinde bu elemana bir id adı verilir.Sonrasında Css dosyasında bu id adından önce # işareti konulur {} içerisinde verilmek istenen özellikler yazılır.-->
+    <h2>Css Dersi</h2>
+    <h2 id="ders-başlık">Css Dersi</h2>
+    <h3 class="yazı">yazılım akademisi</h3>
+    <img class="resim" src="https://picsum.photos/000" alt="resim" />
+    <!-- * Elemanlara css'de verilen stiller dahilinde şunu görüyoruz.Bazı elemanlar bulunduğu satırı tamamen kaplarken bazıları ise bulunduğu satırda içeriği kadar alan kaplar.Yani içerisindeki kısım az ise az alan çoksa çok alan kaplar. Bu bir tesadüf değil elemanların 'inline' yada 'block' eleman olma özelliklerinden kaynaklıdır. -->
+
+    <!-- ! Html İnline Elemanlar: Bu elemanlar bulunduğu satırda içeriği kadar alan kaplar.Ör: i,b,small,img,...,span -->
+
+    <!-- ! Html Block Elemanlar: Bu elemanlar bulunduğu satırın tamamını kaplar.Ör: h1--h6,p,...,div -->
+
+    <!--  Html de Block elemanlardan en popüleri 'div' dir. İnline etiketlerden en popüleri ise 'span' dır.  -->
+
+    <div class="block">Block Eleman Block Eleman Block Eleman Block Eleman</div>
+    <span>İnline Eleman İnline Eleman İnline Eleman</span>
+    <!-- ! Div Html de kapsayıcı ihtiyacı için kullanılır. -->
+    <!-- ! Span Html de bulunduğu kadar yer kaplayacak elemanlar için kullanılır. -->
+    <h1 class="title"><span class="inline">Udemig</span> Eğitim</h1>
+
+    <div class="image-container"></div>
+  </body>
+</html>
